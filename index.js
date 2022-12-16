@@ -1,5 +1,5 @@
 var finances = [
-['Jan-2010', 867884],
+ ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
 ['Apr-2010', -69417],
@@ -86,3 +86,36 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+
+
+//The total number of months included in the dataset
+//Count up how many things are in the array
+// array.lengh
+// Need a variable to store the value of array.lengh
+
+//Tytle
+console.log("Financial Analysis");
+
+//The total number of months included in the dataset.
+
+console.log("Total Months:" + finances.length);
+
+// The net total amount of Profit/Losses over the entire period.
+
+
+
+
+
+
+/** 
+for (let i = 0; i < finances.length; i++) {
+    const [date, amount ] = finances[i];
+    console.log(date);
+    console.log(amount); 
+}
+
+
+let totalAmount */
+
