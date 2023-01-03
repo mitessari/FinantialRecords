@@ -104,18 +104,35 @@ console.log("Total Months:" + finances.length);
 
 // The net total amount of Profit/Losses over the entire period.
 
+let sum = 0
 
-
-
-
-
-/** 
 for (let i = 0; i < finances.length; i++) {
     const [date, amount ] = finances[i];
-    console.log(date);
-    console.log(amount); 
+    sum += [amount];
 }
 
+console.log ("Total:" + sum);
 
-let totalAmount */
+// The greatest increase in profits (date and amount) over the entire period.
+let biggestProfit = 0;
+let smallestProfit = 0;
+let difference = 0;
+for (let i = 1; i < finances.length; i++) {
+    differene =finances[i][1] - finances[ i - 1][1];
+
+    // Conditional to check the difference 
+    if (difference > biggestProfit) {
+        biggestProfit = difference;
+    } else if (difference< smallestProfit) {
+        smallestProfit = difference;
+    }
+}
+
+console.log(
+    "Greatest increase in profits" [biggestProfit]);
+    console.log( "Greatest decrease in profits"[smallestProfit]);
+//  The greatest decrease in losses (date and amount) over the entire period.
+
+
+
 
